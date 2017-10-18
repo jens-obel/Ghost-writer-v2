@@ -4,8 +4,8 @@
     <div class="inner">
       <p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>
       <nav class="nav nav-masthead">
-        <a class="nav-link" href="info.html">Info</a>
 
+        <router-link to="/info" class="nav-link">Info</router-link>
 
         <router-link v-if="$route.name === 'home'" to="/onboarding" class="btn btn-outline-light btn-sm">
           Try it.
