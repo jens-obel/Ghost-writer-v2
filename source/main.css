@@ -6,10 +6,13 @@ a, a:focus, a:hover {
 
 .btn-sm {
   margin-left: 0.5em;
+  cursor: hand;
 }
 
 .btn-sm:hover {
   color: #2c2863;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .badge, .badge-secondary {

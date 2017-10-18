@@ -1,8 +1,8 @@
 <template>
   <div class="inner cover">
 
-    <div>
-      <p id="prevAnswers" v-for="answer in answers">
+    <div id="prevAnswers">
+      <p v-for="answer in answers">
         {{answer}}
       </p>
     </div>
@@ -11,11 +11,14 @@
       {{questions[questionIndex]}}
     </h5>
 
-    <textarea class="answer" v-model="answer" placeholder="Write here..." v-on:keydown.enter="submitAnswer"></textarea>
+    <textarea id="answer" v-model="answer" placeholder="Write here..." v-on:keydown.enter="submitAnswer"></textarea>
+
     <p class="lead">
-      <button type="button" v-on:click="submitAnswer" class="btn btn-outline-light btn-sm">Next question</button>
+      <button v-on:click="submitAnswer" class="btn btn-outline-light btn-sm">Next question</button>
     </p>
-    </div>
+
+  </div>
+
 </template>
 
 <style>
@@ -24,16 +27,17 @@
     display: none;
   }
 
-  .answer {
+  #answer {
     background-color: transparent;
     color: #fff;
     border: none;
     outline: none;
     font-family: inherit;
     font-size: 22px;
-    margin: 70px;
+    margin: 70px 0px 0px 0px;
     resize: none;
     overflow: hidden;
+    width: 400px;
   }
 
   #prevAnswers {
