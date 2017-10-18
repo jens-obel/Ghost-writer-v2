@@ -1,5 +1,6 @@
 a, a:focus, a:hover {
-  color: #2c2863;
+  color: #fff;
+  opacity: .5;
 }
 
 /* Custom default button */

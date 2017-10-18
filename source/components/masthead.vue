@@ -3,7 +3,7 @@
   <div class="masthead clearfix">
     <div class="inner">
       <!--<p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>-->
-      <router-link to="/home" class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></router-link>
+      <router-link to="/" class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></router-link>
       <nav class="nav nav-masthead">
 
         <router-link to="/info" class="nav-link">Info</router-link>
