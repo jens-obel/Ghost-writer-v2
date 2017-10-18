@@ -2,7 +2,8 @@
 
   <div class="masthead clearfix">
     <div class="inner">
-      <p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>
+      <!--<p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>-->
+      <router-link to="/home" class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></router-link>
       <nav class="nav nav-masthead">
 
         <router-link to="/info" class="nav-link">Info</router-link>
@@ -27,9 +28,12 @@
     margin-bottom: 2rem;
   }
 
-  .masthead-brand {
+  .masthead-brand, .masthead-brand:hover,  .masthead-brand:focus {
     margin-bottom: 0;
     margin-top: 4px;
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
   }
 
   .nav-masthead .nav-link {
