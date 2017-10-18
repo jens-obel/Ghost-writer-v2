@@ -19,6 +19,11 @@
 </template>
 
 <style>
+
+  .mastfoot {
+    display: none;
+  }
+
   .answer {
     background-color: transparent;
     color: #fff;
@@ -36,18 +41,8 @@
     opacity: .5;
   }
 
-  .txtstuff {
-  resize: none; /* remove this if you want the user to be able to resize it in modern browsers */
-  overflow: hidden;
-  }
+  #question {
 
-  .hiddendiv {
-    position: absolute;
-    left: -9999px;
-    visibility: hidden;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
   }
 
 </style>
