@@ -12,9 +12,9 @@
     </h5>
 
     <textarea class="answer" v-model="answer" placeholder="Write here..." v-on:keydown.enter="submitAnswer"></textarea>
-
-    <button type="button" v-on:click="submitAnswer" class="btn btn-outline-light btn-sm">Next question</button>
-
+    <p class="lead">
+      <button type="button" v-on:click="submitAnswer" class="btn btn-outline-light btn-sm">Next question</button>
+    </p>
     </div>
 </template>
 

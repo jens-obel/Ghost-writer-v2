@@ -15,6 +15,7 @@ a, a:focus, a:hover {
 
 .btn-sm {
   margin-left: 0.5em;
+
 }
 
 .badge, .badge-secondary {
@@ -32,35 +33,19 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: 1s opacity;
+}
+
 body.index-page {
   background-image: url("/resources/Mockup-2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: 170vh;
   background-repeat: no-repeat;
-}
-
-.ql-editor {
-  text-align: left;
-}
-
-.ql-container {
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 22px;
-  margin: 70px;
-}
-
-.ql-editor.ql-blank::before  {
-  color: #ffffff;
-  opacity: .5;
-}
-
-body {
-  color: #fff;
-  text-align: center;
-  opacity: 1;
-  transition: 1s opacity;
 }
 
 body.fade-out {
