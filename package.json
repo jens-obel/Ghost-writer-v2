@@ -33,6 +33,8 @@
     },
     "scripts": {
         "dev": "webpack-dev-server --inline --hot",
-        "build": "webpack -p --env.production --hide-modules --progress"
+        "build": "webpack -p --env.production --hide-modules --progress",
+        "deploy": "surge ./distribution ghostwriter",
+        "bd": "webpack -p --env.production --hide-modules --progress && surge ./distribution ghostwriter.surge.sh"
     }
 }

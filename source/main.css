@@ -33,7 +33,7 @@ html, body {
 }
 
 body.index-page {
-  background-image: url("Mockup-2.jpg");
+  background-image: url("/resources/Mockup-2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: 170vh;
