@@ -1,5 +1,7 @@
 <template>
-  <p>Hello</p>
+  <div class="inner cover">
+    <p>Hello</p>
+  </div>
 </template>
 
 <style>
