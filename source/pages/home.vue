@@ -11,13 +11,19 @@
 
 <style>
 #action {
-  color: #2c2863;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 15px 30px 15px 30px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: .1875rem;
 }
 
 #action:hover {
-  color: #fff;
-  background-color: transparent;
+  color: #2c2863;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: .1875rem;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(-1px)
 }
 </style>
