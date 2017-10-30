@@ -23,13 +23,21 @@
 
 <style>
 
+html, body {
+  background-color: #FFFBF9;
+}
+
+body {
+  color: #3D002C;
+}
+
   .mastfoot {
     display: none;
   }
 
   #answer {
     background-color: transparent;
-    color: #fff;
+    color: #333;
     border: none;
     outline: none;
     font-family: inherit;
