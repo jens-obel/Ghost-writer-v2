@@ -26,4 +26,9 @@
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
   transform: translateY(-1px)
 }
+
+.inner p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
 </style>

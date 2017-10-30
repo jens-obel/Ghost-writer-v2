@@ -10,7 +10,7 @@
 
             <div class="mastfoot">
               <div class="inner">
-                <p id="date">dsdfsdf</p>
+                <p>Write your own biography</p>
               </div>
             </div>
 
