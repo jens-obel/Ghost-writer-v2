@@ -1,21 +1,17 @@
 <template>
   <div class="inner cover">
-
+    <img class="photo" src="resources/Photo.png">
     <div id="prevAnswers">
       <p v-for="answer in answers">
         {{answer}}
       </p>
     </div>
 
-    <p id="question">
-      {{questions[questionIndex]}}
-    </p>
+    <div id="question">
+      <p>•    {{questions[questionIndex]}}</p>
+    </div>
 
     <textarea id="answer" v-model="answer" placeholder="Write here..." v-on:keydown.enter="submitAnswer"></textarea>
-
-    <p class="lead">
-      <button v-on:click="submitAnswer" class="btn btn-outline-light btn-sm">Next question</button>
-    </p>
 
   </div>
 
@@ -23,60 +19,54 @@
 
 <style>
 
-html, body {
-  background-color: #FFFBF9;
+@media (min-width: 62em) {
+  .masthead, .mastfoot, .cover-container {
+    width: 100% !important;
+  }
 }
 
-body {
-  color: #3D002C;
+.photo {
+  width: 460px;
+  margin-bottom: 100px;
+  margin-top: 60px;
 }
 
-.cover-heading {
-  color: #3D002C;
-}
-
-.nav-masthead .nav-link {
-  color: #3D002C;
-}
-
-.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
-  color: #3D002C;
-}
-
-.masthead-brand, .masthead-brand:hover,  .masthead-brand:focus {
-  color: #3D002C;
-}
-
-.nav-masthead .nav-link {
-  color: #3D002C;
-
-}
-
-  .mastfoot {
+.mastfoot {
     display: none;
   }
 
-  #answer {
-    background-color: transparent;
-    color: #333;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    font-size: 22px;
-    margin: 70px 0px 0px 0px;
-    resize: none;
-    overflow: hidden;
-    width: 400px;
-  }
+#answer {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 22px;
+  margin: 0px 0px 0px 0px;
+  resize: none;
+  overflow: visible;
+  width: 400px;
+  padding-bottom: 200px;
+}
 
-  #prevAnswers {
-    font-size: 22px;
-    opacity: .5;
-  }
+#prevAnswers {
+  font-size: 22px;
+  width: 400px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  #question {
-    color: #C64BFF;
-  }
+#question {
+  color: #C64BFF;
+  /*float: left;*/
+
+  width: 300px;
+  height: auto;
+  text-align: left;
+  position: absolute;
+  margin-top: 43px;
+}
 
 </style>
 
@@ -86,10 +76,14 @@ body {
       return {
         answers: [],
         questions: [
-          "What was your parents names?",
-          "What do you remember about them from your childhood?",
-          "Where were you born?",
-          "Tell me about what it was like?"
+          "Where did you take this photo?",
+          "What happened before this photo was taken?",
+          "What happened after this photo was taken?",
+          "How does this photo make you feel now?",
+          ".",
+          ".",
+          ".",
+          ".",
         ],
         questionIndex: 0
       }
@@ -110,9 +104,10 @@ body {
         } else {
         this.questionIndex += 1
         }
+
+        window.scrollTo(0, 5510);
       }
     }
-
   }
 
 </script>

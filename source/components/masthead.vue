@@ -4,6 +4,9 @@
     <div class="inner">
       <!--<p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>-->
       <router-link to="/" class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></router-link>
+
+      <p id="chapter">Chapter 47</p>
+
       <nav class="nav nav-masthead">
 
         <router-link to="/info" class="nav-link">Info</router-link>
@@ -26,6 +29,10 @@
 <style>
   .masthead {
     margin-bottom: 2rem;
+  }
+
+  #chapter {
+    display: inline-flex;
   }
 
   .masthead-brand, .masthead-brand:hover,  .masthead-brand:focus {
