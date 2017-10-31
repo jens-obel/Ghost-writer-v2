@@ -1,8 +1,8 @@
 <template>
   <div class="inner cover">
     <div class="photo">
-    <img src="resources/Photo.jpeg">
-    <small>Iceland, October 12. 2015</small>
+    <img src="resources/Photo.png">
+    <small>Copenhagen, April 1. 2017</small>
     </div>
 
     <div id="prevAnswers">
@@ -39,6 +39,14 @@ img {
     display: none;
   }
 
+#prevQuestion {
+  text-align: left;
+  position: absolute;
+  margin-top: 34px;
+  color: #C64BFF;
+
+}
+
 
 
 </style>
@@ -57,8 +65,8 @@ img {
           "How does this photo make you feel now?",
           "How did you feel at the time?",
           "Who was with you when you took the photo?",
-          ".",
-          ".",
+          "Why is moment important to you?",
+          "What have you learnt since taking this photo?",
         ],
         questionIndex: 0
       }
@@ -74,7 +82,7 @@ img {
         this.answers.push(this.answer)
         this.answer = ''
 
-        if (this.questionIndex === 3) {
+        if (this.questionIndex === 9) {
             this.questionIndex = 0
         } else {
         this.questionIndex += 1

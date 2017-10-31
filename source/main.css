@@ -37,7 +37,7 @@ a, a:focus, a:hover {
   margin: 0px 0px 0px 0px;
   resize: none;
   overflow: visible;
-  width: 460px;
+  width: 500px;
   padding-bottom: 200px;
   padding-left: 0px;
 }
@@ -45,7 +45,7 @@ a, a:focus, a:hover {
 #prevAnswers {
   font-family: FreightText;
   font-size: 20px;
-  width: 460px;
+  width: 500px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +59,7 @@ a, a:focus, a:hover {
   height: auto;
   text-align: left;
   position: absolute;
-  margin-top: 43px;
+  margin-top: 34px;
 }
 
 /*
