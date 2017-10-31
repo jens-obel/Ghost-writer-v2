@@ -23,12 +23,6 @@
 
 <style>
 
-@media (min-width: 62em) {
-  .masthead, .mastfoot, .cover-container {
-    width: 100% !important;
-  }
-}
-
 .photo {
   width: 460px;
   margin-bottom: 100px;
@@ -45,40 +39,7 @@ img {
     display: none;
   }
 
-#answer {
-  background-color: transparent;
-  color: #3D002C;
-  border: none;
-  outline: none;
-  font-family: FreightText;
-  font-size: 20px;
-  margin: 0px 0px 0px 0px;
-  resize: none;
-  overflow: visible;
-  width: 460px;
-  padding-bottom: 200px;
-  padding-left: 0px;
-}
 
-#prevAnswers {
-  font-family: FreightText;
-  font-size: 20px;
-  width: 460px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#question {
-  color: #C64BFF;
-  /*float: left;*/
-
-  width: 300px;
-  height: auto;
-  text-align: left;
-  position: absolute;
-  margin-top: 43px;
-}
 
 </style>
 
@@ -88,12 +49,14 @@ img {
       return {
         answers: [],
         questions: [
+          "What is this photo of?",
           "Where did you take this photo?",
+          "When was this photo taken?",
           "What happened before this photo was taken?",
           "What happened after this photo was taken?",
           "How does this photo make you feel now?",
-          ".",
-          ".",
+          "How did you feel at the time?",
+          "Who was with you when you took the photo?",
           ".",
           ".",
         ],

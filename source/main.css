@@ -26,6 +26,42 @@ a, a:focus, a:hover {
   position: -2px;
 }
 
+/* Editor */
+#answer {
+  background-color: transparent;
+  color: #3D002C;
+  border: none;
+  outline: none;
+  font-family: FreightText;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  resize: none;
+  overflow: visible;
+  width: 460px;
+  padding-bottom: 200px;
+  padding-left: 0px;
+}
+
+#prevAnswers {
+  font-family: FreightText;
+  font-size: 20px;
+  width: 460px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#question {
+  color: #C64BFF;
+  /*float: left;*/
+
+  width: 300px;
+  height: auto;
+  text-align: left;
+  position: absolute;
+  margin-top: 43px;
+}
+
 /*
  * Base structure
  */
@@ -45,10 +81,10 @@ body {
 }
 
 body.index-page {
-  /*background-image: url("/resources/Mockup-2.jpg");*/
+  background-image: url("/resources/Rectangle 4.png");
   background-attachment: fixed;
   background-position: center;
-  background-size: 170vh;
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
 
@@ -59,6 +95,11 @@ body.fade-out {
 
 h1 {
   margin-top: 2em;
+}
+
+p {
+  margin-left: 0px !important;
+margin-right: 0px !important;
 }
 
 .cover-heading {
@@ -112,7 +153,6 @@ h1 {
 /* Padding for spacing */
 
 .inner {
-  padding: 1.3rem;
 
   -webkit-animation-delay: 15s; /* Safari 4.0 - 8.0 */
   animation-delay: 15s;
@@ -168,6 +208,7 @@ h1 {
 
 .nav-masthead {
   float: right;
+  margin-right: 2.6em;
 }
 
 /*
@@ -218,6 +259,7 @@ h1 {
   /* Handle the widths */
   .masthead, .mastfoot, .cover-container {
     width: 100%;
+    padding: 1.3em;
     /* Must be percentage or pixels for horizontal alignment */
   }
 
