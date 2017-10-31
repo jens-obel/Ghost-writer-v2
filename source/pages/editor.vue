@@ -1,6 +1,10 @@
 <template>
   <div class="inner cover">
-    <img class="photo" src="resources/Photo.png">
+    <div class="photo">
+    <img src="resources/Photo.jpeg">
+    <small>Iceland, October 12. 2015</small>
+    </div>
+
     <div id="prevAnswers">
       <p v-for="answer in answers">
         {{answer}}
@@ -28,7 +32,13 @@
 .photo {
   width: 460px;
   margin-bottom: 100px;
-  margin-top: 60px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
 }
 
 .mastfoot {
@@ -37,21 +47,23 @@
 
 #answer {
   background-color: transparent;
-  color: #fff;
+  color: #3D002C;
   border: none;
   outline: none;
-  font-family: inherit;
-  font-size: 22px;
+  font-family: FreightText;
+  font-size: 20px;
   margin: 0px 0px 0px 0px;
   resize: none;
   overflow: visible;
-  width: 400px;
+  width: 460px;
   padding-bottom: 200px;
+  padding-left: 0px;
 }
 
 #prevAnswers {
-  font-size: 22px;
-  width: 400px;
+  font-family: FreightText;
+  font-size: 20px;
+  width: 460px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;

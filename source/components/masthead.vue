@@ -38,7 +38,7 @@
   .masthead-brand, .masthead-brand:hover,  .masthead-brand:focus {
     margin-bottom: 0;
     margin-top: 4px;
-    color: #fff;
+    color: #3D002C;
     font-style: none;
     text-decoration: none;
   }
@@ -46,12 +46,12 @@
   .nav-masthead .nav-link {
     padding: .25rem 1.2em;
     font-weight: 400;
-    color: #fbe9df;
+    color: #3D002C;
     background-color: transparent;
   }
 
   .nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
-    color: #fbe9df;
+    color: #3D002C;
     opacity: .5;
   }
 
@@ -60,7 +60,8 @@
   }
 
   .nav-masthead .active {
-    color: rgba(255, 255, 255, .5);
+    color: #3D002C;
+    opacity: .5;
   }
 
   .masthead-brand {
