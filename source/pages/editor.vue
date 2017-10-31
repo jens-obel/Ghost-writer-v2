@@ -7,9 +7,9 @@
       </p>
     </div>
 
-    <h5 id="question">
+    <p id="question">
       {{questions[questionIndex]}}
-    </h5>
+    </p>
 
     <textarea id="answer" v-model="answer" placeholder="Write here..." v-on:keydown.enter="submitAnswer"></textarea>
 
@@ -29,6 +29,27 @@ html, body {
 
 body {
   color: #3D002C;
+}
+
+.cover-heading {
+  color: #3D002C;
+}
+
+.nav-masthead .nav-link {
+  color: #3D002C;
+}
+
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+  color: #3D002C;
+}
+
+.masthead-brand, .masthead-brand:hover,  .masthead-brand:focus {
+  color: #3D002C;
+}
+
+.nav-masthead .nav-link {
+  color: #3D002C;
+
 }
 
   .mastfoot {
@@ -54,7 +75,7 @@ body {
   }
 
   #question {
-
+    color: #C64BFF;
   }
 
 </style>
