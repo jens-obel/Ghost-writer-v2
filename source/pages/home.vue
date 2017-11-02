@@ -1,6 +1,6 @@
 <template>
   <div class="inner cover">
-    <p>
+    <p id="intro">
       Ghost Writer helps you capture your life story through the digital artifacts you have left behind.<br><br> By matching your digital data with your personal memories, Ghost Writer will help you leave your memories behind in a meaningfull way.
     </p>
     <p class="lead">
@@ -10,6 +10,15 @@
 </template>
 
 <style>
+
+#intro {
+  width: 600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #fff;
+
+}
+
 #action {
   background-color: #3D002C;
   padding: 15px 30px 15px 30px;

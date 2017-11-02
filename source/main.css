@@ -26,6 +26,12 @@ a, a:focus, a:hover {
   position: -2px;
 }
 
+/* Sketch*/
+.lemon {
+  z-index: -1;
+  position: fixed !important;
+}
+
 /* Editor */
 #answer {
   background-color: transparent;
@@ -55,7 +61,7 @@ a, a:focus, a:hover {
   color: #C64BFF;
   /*float: left;*/
 
-  width: 300px;
+  width: 200px;
   height: auto;
   text-align: left;
   position: absolute;
@@ -68,7 +74,7 @@ a, a:focus, a:hover {
 
 html, body {
   height: 100%;
-  background-color: #FFFBF9;
+  background-color: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

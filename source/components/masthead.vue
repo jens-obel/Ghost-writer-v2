@@ -2,10 +2,10 @@
 
   <div class="masthead clearfix">
     <div class="inner">
-      <!--<p class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></p>-->
       <router-link to="/" class="masthead-brand">Ghost Writer <span class="badge badge-secondary">Alpha</span></router-link>
 
-      <p id="chapter">Chapter 47</p>
+      <p id="chapter" v-if="$route.name === 'editor'" to="/editor">Chapter 7 – Childhood</p>
+      <p id="chapter" v-else ></p>
 
       <nav class="nav nav-masthead">
 

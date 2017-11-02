@@ -1,10 +1,6 @@
 <template>
   <div class="inner cover">
-    <div class="photo">
-    <img src="resources/Photo.png">
-    <small>Copenhagen, April 1. 2017</small>
-    </div>
-
+    <p id="chapter">Chapter 1 – Childhood</p>
     <div id="prevAnswers">
       <p v-for="answer in answers">
         {{answer}}
@@ -22,6 +18,15 @@
 </template>
 
 <style>
+
+#chapter {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-family: FreightText;
+  font-style: italic;
+  font-size: 20px;
+}
+
 
 .photo {
   width: 460px;
@@ -52,21 +57,33 @@ img {
 </style>
 
 <script>
+
+  var allAnswers = [];
+
   export default {
     data() {
       return {
         answers: [],
         questions: [
-          "What is this photo of?",
-          "Where did you take this photo?",
-          "When was this photo taken?",
-          "What happened before this photo was taken?",
-          "What happened after this photo was taken?",
-          "How does this photo make you feel now?",
-          "How did you feel at the time?",
-          "Who was with you when you took the photo?",
-          "Why is moment important to you?",
-          "What have you learnt since taking this photo?",
+          "Where and when where you born?",
+          "Was it at the hospital or at home?",
+          "Where did you live when you where little?",
+          "How would you describe yourself as a child?",
+          "What was you mother and fathers names?",
+          "What did they do?",
+          "How was your realtionship to your parents?",
+          "Who did you spend most time with?",
+          "Who helped you with homework?",
+          "How many siblings do you have?",
+          "What is their names?",
+          "Where you good friends with your sibling when you where a children?",
+          "Did you tease them, or did they tease you?",
+          "What was your grandparent names?",
+          "How often did you see them?",
+          "What did you do with them?",
+          "What was the best part about your family?",
+          "What is your best memories from your childhood?"
+
         ],
         questionIndex: 0
       }
@@ -80,9 +97,11 @@ img {
       submitAnswer() {
 
         this.answers.push(this.answer)
+        allAnswers.push(this.answer)
+        console.log(allAnswers)
         this.answer = ''
 
-        if (this.questionIndex === 9) {
+        if (this.questionIndex === 16) {
             this.questionIndex = 0
         } else {
         this.questionIndex += 1
