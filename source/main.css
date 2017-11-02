@@ -66,6 +66,9 @@ a, a:focus, a:hover {
   text-align: left;
   position: absolute;
   margin-top: 34px;
+
+  -webkit-animation: questionMove 2s ease; /* Safari 4.0 - 8.0 */
+  animation: questionMove 2s ease;
 }
 
 /*
@@ -87,7 +90,7 @@ body {
 }
 
 body.index-page {
-  background-image: url("/resources/Rectangle 4.png");
+  background-image: url("/resources/Radial.png");
   background-attachment: fixed;
   background-position: center;
   background-size: 100vw;
@@ -124,15 +127,15 @@ margin-right: 0px !important;
   -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
   animation-delay: 4s;
 
-  -webkit-animation: fadein 10s;
+  -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 10s;
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
-  -ms-animation: fadein 10s;
+  -ms-animation: fadein 2s;
   /* Internet Explorer */
-  -o-animation: fadein 10s;
+  -o-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation: fadein 10s;
+  animation: fadein 2s;
 }
 
 
@@ -163,15 +166,15 @@ margin-right: 0px !important;
   -webkit-animation-delay: 15s; /* Safari 4.0 - 8.0 */
   animation-delay: 15s;
 
-  -webkit-animation: fadein 10s;
+  -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 10s;
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
-  -ms-animation: fadein 10s;
+  -ms-animation: fadein 2s;
   /* Internet Explorer */
-  -o-animation: fadein 10s;
+  -o-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation: fadein 10s;
+  animation: fadein 2s;
 }
 
 /*
@@ -224,15 +227,15 @@ margin-right: 0px !important;
 .cover {
   padding: 0 1.5rem;
 
-  -webkit-animation: fadein 6s;
+  -webkit-animation: fadein 1s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 6s;
+  -moz-animation: fadein 1s;
   /* Firefox < 16 */
-  -ms-animation: fadein 6s;
+  -ms-animation: fadein 1s;
   /* Internet Explorer */
-  -o-animation: fadein 6s;
+  -o-animation: fadein 1s;
   /* Opera < 12.1 */
-  animation: fadein 6s;
+  animation: fadein 1s;
 }
 
 /*
@@ -322,4 +325,16 @@ margin-right: 0px !important;
   from {
     opacity: 0;
   }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes questionMove {
+    0%   {margin-left: -100px;}
+    100% {margin-left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes questionMove {
+    0%   {margin-left: -100px;}
+    100% {margin-left: 0px;}
 }
